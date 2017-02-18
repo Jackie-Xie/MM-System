@@ -1,0 +1,48 @@
+<nav class="pull-left">
+    <ul class="pagination">
+        <li class="brief"><em class="pdl0">总共 {{pager.total}} 条，每页显示 </em></li>
+        <li class="brief">
+            <select class="form-control jump-number" ng-model="pager.pageSize" ng-change="getTableData()">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+        </li>
+        <li class="brief"><em> 条 </em></li>
+    </ul>
+</nav>
+<nav class="text-right">
+    <ul class="pagination">
+        <li class="brief"><em>共 {{pager.pagesNum}} 页，当前第 {{pager.curPage}}/{{pager.pagesNum}} 页</em></li>
+        <li class="prev" ng-class="{true:'disabled',false:''}[pager.curPage == 1]">
+            <a role="button" aria-label="Previous">
+                &laquo;
+            </a>
+        </li>
+
+        <li class="item" ng-show="pager.curPage>2"><a role="button">1</a></li>
+        <li class="item" ng-show="pager.curPage>3"><a role="button">2</a></li>
+        <li class="dot" ng-show="pager.curPage>4"><span>...</span></li>
+        <li class="item" ng-show="pager.curPage>1"><a role="button">{{pager.curPage-1}}</a></li>
+        <li class="active"><a role="button">{{pager.curPage}}</a></li>
+        <li class="item" ng-show="pager.pagesNum>pager.curPage"><a role="button">{{pager.curPage+1}}</a></li>
+        <li class="dot" ng-show="pager.pagesNum-pager.curPage>3"><span>...</span></li>
+        <li class="item" ng-show="pager.pagesNum-pager.curPage>2"><a role="button">{{pager.pagesNum-1}}</a></li>
+        <li class="item" ng-show="pager.pagesNum-pager.curPage>1"><a role="button">{{pager.pagesNum}}</a></li>
+        <li class="next" ng-class="{true:'disabled',false:''}[pager.curPage == pager.pagesNum]">
+            <a role="button" aria-label="Next">
+                &raquo;
+            </a>
+        </li>
+        <li class="brief">
+            <em>跳转到</em>
+            <input class="form-control jump-number" type="number" min="1" max="{{pager.pagesNum}}" placeholder="1"
+                   ng-model="jumpNum"/>
+            <em>页</em>
+            <a role="button" class="button button-glow button-rounded button-operate button-mm-sm"
+               ng-click="jumpToPage()">确定</a>
+        </li>
+    </ul>
+</nav>

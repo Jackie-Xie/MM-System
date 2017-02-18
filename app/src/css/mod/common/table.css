@@ -1,0 +1,95 @@
+/**
+ *    表格样式
+ *    Create by Jackie Xie
+ *    2016-11-11
+ */
+.search-result {
+    font-size: 12px;
+    color: #666;
+}
+
+.search-result-num {
+    color: #26a9ea;
+}
+
+.table-responsive {
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.table-custom > tbody > tr > td,
+.table-custom > tbody > tr > th,
+.table-custom > tfoot > tr > td,
+.table-custom > tfoot > tr > th,
+.table-custom > thead > tr > td,
+.table-custom > thead > tr > th {
+    vertical-align: middle;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table-custom > thead > tr > td,
+.table-custom > thead > tr > th {
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    border-color: #ccc;
+}
+
+.table-custom a.btn.btn-link {
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #26a9ea;
+}
+
+.table-custom a.btn.btn-link:focus,
+.table-custom a.btn.btn-link:hover {
+    color: #61c9f2;
+}
+
+.table-custom > tbody > tr > .col-index,
+.table-custom > tbody > tr > .col-index,
+.table-custom > tfoot > tr > .col-index,
+.table-custom > tfoot > tr > .col-index,
+.table-custom > thead > tr > .col-index,
+.table-custom > thead > tr > .col-index {
+    width: 50px;
+}
+
+.table-custom > tbody > tr > .tl,
+.table-custom > tbody > tr > .tl,
+.table-custom > tfoot > tr > .tl,
+.table-custom > tfoot > tr > .tl,
+.table-custom > thead > tr > .tl,
+.table-custom > thead > tr > .tl {
+    text-align: left;
+}
+
+.table-custom > tbody > tr > .col-operate,
+.table-custom > tbody > tr > .col-operate,
+.table-custom > tfoot > tr > .col-operate,
+.table-custom > tfoot > tr > .col-operate,
+.table-custom > thead > tr > .col-operate,
+.table-custom > thead > tr > .col-operate {
+    width: 200px;
+    max-width: 200px;
+}
+
+/*.table-custom > tbody > tr > .limit-m150,
+.table-custom > tbody > tr > .limit-m150,
+.table-custom > tfoot > tr > .limit-m150,
+.table-custom > tfoot > tr > .limit-m150,
+.table-custom > thead > tr > .limit-m150,
+.table-custom > thead > tr > .limit-m150{
+     max-width: 150px;
+     overflow: hidden;
+     text-overflow:ellipsis;
+     white-space: nowrap;
+}*/

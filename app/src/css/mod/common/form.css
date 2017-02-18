@@ -1,0 +1,13 @@
+/**
+ *    表单样式
+ *    Create by Jackie Xie
+ *    2017-
+ */
+.form-search {
+    margin-right: 15px;
+}
+
+.form-search label {
+    font-size: 14px;
+    font-weight: normal;
+}

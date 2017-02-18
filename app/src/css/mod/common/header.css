@@ -1,0 +1,113 @@
+/**
+ *    头部样式
+ *    Create by Jackie Xie
+ *    2016-11-20
+ */
+.header {
+    font-size: 14px;
+}
+
+.navbar-self {
+    background-color: #2d3537;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.navbar-logo {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.logo-icon {
+    margin-top: -3px;
+    float: left;
+}
+
+.logo-title {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 52px;
+    margin-left: 10px;
+    margin-right: 2.6rem;
+}
+
+.navbar-self .navbar-nav > li > a {
+    color: #a2a2a2;
+}
+
+.navbar-self .navbar-nav > .open > a,
+.navbar-self .navbar-nav > .open > a:focus,
+.navbar-self .navbar-nav > .open > a:hover {
+    color: #eee;
+    background-color: transparent;
+}
+
+/*图标*/
+.icon-header {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 10px;
+}
+
+.icon-header-login,
+.icon-header-user {
+    width: 21px;
+    height: 21px;
+    background: url(../../../images/icons/icon-header-user.png) no-repeat center center;
+}
+
+.icon-header-pwd {
+    background: url(../../../images/icons/icon-header-pwd.png) no-repeat center center;
+}
+
+.icon-header-logout {
+    margin-top: -1px;
+    background: url(../../../images/icons/icon-header-logout.png) no-repeat center center;
+}
+
+.icon-btn {
+    border: 1px solid #090305;
+    border-radius: 4px;
+    margin: 11px 8px;
+}
+
+.navbar-inverse .navbar-nav > li > .icon-btn {
+    padding: 0;
+    color: #c6c8c9;
+    background-color: #474747;
+    border-color: #090305;
+}
+
+.navbar-inverse .navbar-nav > li > .icon-btn:hover,
+.navbar-inverse .navbar-nav > li > .icon-btn:focus {
+    color: #ffffff;
+    background-color: #2a2a2a;
+}
+
+.hr-light {
+    display: inline-block;
+    padding: 2px 12px;
+    background-color: transparent;
+    border-top: 1px solid #646061;
+    border-radius: 4px;
+}
+
+.btn-user {
+    cursor: auto;
+}
+
+.user-name {
+    color: #33abf9;
+    text-shadow: 2px 2px 4px #26a9ea;
+}
+
+.navbar-inverse .navbar-nav > li > .btn-user:focus,
+.navbar-inverse .navbar-nav > li > .btn-user:hover {
+    color: #a2a2a2;
+}
+

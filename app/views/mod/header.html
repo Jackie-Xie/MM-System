@@ -1,0 +1,125 @@
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-self">
+    <div class="container-fluid">
+        <!-- 左上产品LOGO -->
+        <a class="navbar-brand navbar-logo pdl15" href="#/home">
+            <div class="logo-icon">
+                <img class="hidden-xs" src="../../src/images/header/logo_icon.png" width="100%" alt="LOGO">
+            </div>
+            <div class="logo-title">砂浆企业管理系统</div>
+        </a>
+        <!-- 收起状态下的导航 -->
+        <div class="navbar-header">
+            <a role="button" class="navbar-toggle collaptest" data-toggle="collapse" data-target="#J_fixedNavbar">
+                <span class="sr-only">收起后的导航（三）</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <!-- 导航主体 s -->
+        <div id="J_fixedNavbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!-- <li ng-class="{'active':pathStr.indexOf('home')>-1}"><a href="#/home">首 页</a></li> -->
+                <li ng-class="{'active':pathStr.indexOf('originalTest')>-1}">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        原始记录<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#/originalTest/cement">水泥原始记录</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/originalTest/fines">细骨料原始记录</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/originalTest/flyash">粉煤灰原始记录</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/originalTest/mineral">矿粉原始记录</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/originalTest/thickener">保水增稠材料原始记录</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/originalTest/mortar">砂浆原始记录</a></li>
+                    </ul>
+                </li>
+                <li ng-class="{'active':pathStr.indexOf('otherRecords')>-1}"><a href="#/otherRecords">其他记录</a></li>
+                <li ng-class="{'active':pathStr.indexOf('workNotice')>-1}"><a href="#/workNotice">通知单</a></li>
+                <li class="dropdown" ng-class="{'active':pathStr.indexOf('reportForms')>-1}">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        汇总报表<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/reportForms/cement">水泥检验结果</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/reportForms/fines">细骨料检验结果</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/reportForms/flyash">粉煤灰检验结果</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/reportForms/mineral">矿粉检验结果</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/reportForms/thickener">保水增稠材料检验结果</a></li>
+                        <li role="separator" class="divider">我是分割线</li>
+                        <li><a href="#/reportForms/mortar">砂浆检验结果</a></li>
+                    </ul>
+                </li>
+                <li ng-class="{'active':pathStr.indexOf('leaveFactory')>-1}"><a href="#/leaveFactory">出厂报告</a></li>
+                <li ng-class="{'active':pathStr.indexOf('setting')>-1}"><a href="#/setting">系统管理</a></li>
+            </ul>
+            <!-- 右侧功能项 s -->
+            <ul class="nav navbar-nav navbar-right pdr15 hidden-xs">
+                <!-- <li><a href="#/login" role="button" class="btn btn-link fs12 icon-btn"><span class="hr-light"><i class="icon-header icon-header-login"></i>登录</span></a></li> -->
+                <li><a class="btn btn-user no-border fs14"><i class="icon-header icon-header-user"></i>欢迎你，<span
+                    class="user-name">{{headerUser}}</span></a></li>
+                <li><a role="button" class="btn btn-link fs12 icon-btn" data-toggle="modal" data-target="#J_modifyModal"><span class="hr-light"><i
+                    class="icon-header icon-header-pwd"></i>修改密码</span></a></li>
+                <li><a role="button" class="btn btn-link fs12 icon-btn" ng-click="logout()"><span class="hr-light"><i
+                    class="icon-header icon-header-logout"></i>安全退出</span></a></li>
+            </ul>
+            <!-- 右侧功能项 e -->
+        </div>
+        <!-- 导航主体 e -->
+    </div>
+</nav>
+
+<!-- 修改密码弹窗 s -->
+<div id="J_modifyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal form-modal">
+                    <div class="form-group">
+                        <label class="col-lg-2 col-md-2 col-sm-2 col-xs-6 control-label">用户名：</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6">
+                            <p class="form-control-static">{{headerUser}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="oldPassword" class="col-lg-2 col-md-2 col-sm-2 col-xs-6 control-label">原密码：</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6">
+                            <input type="password" class="form-control" id="oldPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword" class="col-lg-2 col-md-2 col-sm-2 col-xs-6 control-label">新密码：</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6">
+                            <input type="password" class="form-control" id="newPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeatPassword" class="col-lg-2 col-md-2 col-sm-2 col-xs-6 control-label">再次输入：</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-6">
+                            <input type="password" class="form-control" id="repeatPassword" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" ng-click="modifyPwd()">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 修改密码弹窗 e -->
+

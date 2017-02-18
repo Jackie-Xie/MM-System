@@ -1,0 +1,125 @@
+/**
+ *    子菜单样式
+ *    Create by Jackie Xie
+ *    2017-01-01
+ */
+.sub-menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    width: inherit;
+    border-bottom: 1px solid #505050;
+    background-color: #444;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sub-menu-item {
+    text-align: left;
+    border-top: 1px solid #505050;
+    border-bottom: 1px solid #393939;
+    margin: 0;
+    background-color: #444;
+}
+
+.sub-menu-item:focus,
+.sub-menu-item:hover,
+.sub-menu-item:active,
+.current-item {
+    cursor: pointer;
+    background-color: #2a2a2a;
+
+}
+
+.sub-menu-item a {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: #a2a2a2;
+}
+
+.sub-menu-item a:focus,
+.sub-menu-item a:hover,
+.sub-menu-item:focus a,
+.sub-menu-item:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-menu-item a:focus,
+.sub-menu-item a:hover,
+.sub-menu-item a:active {
+    outline: none;
+}
+
+.current-item a {
+    color: #fff;
+}
+
+.icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.icon-history {
+    background: url(../../../images/icons/icon-history.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-history,
+.sub-menu-item:hover .icon-history,
+.sub-menu-item:active .icon-history,
+.current-item .icon-history {
+    background: url(../../../images/icons/icon-history-active.png) no-repeat center center;
+}
+
+.icon-create {
+    background: url(../../../images/icons/icon-create.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-create,
+.sub-menu-item:hover .icon-create,
+.sub-menu-item:active .icon-create,
+.current-item .icon-create {
+    background: url(../../../images/icons/icon-create-active.png) no-repeat center center;
+}
+
+.icon-analyse {
+    background: url(../../../images/icons/icon-analyse.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-analyse,
+.sub-menu-item:hover .icon-analyse,
+.sub-menu-item:active .icon-analyse,
+.current-item .icon-analyse {
+    background: url(../../../images/icons/icon-analyse-active.png) no-repeat center center;
+}
+
+.icon-input {
+    background: url(../../../images/icons/icon-input.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-input,
+.sub-menu-item:hover .icon-input,
+.sub-menu-item:active .icon-input,
+.current-item .icon-input {
+    background: url(../../../images/icons/icon-input-active.png) no-repeat center center;
+}
+
+/* 图标颜色#a2a2a2,active#ffffff 36*36 32*32*/
+/*user用户管理*/
+/*authority权限管理*/
+/*company公司管理*/
+/*mixture砂浆配合比*/
+/*reserved砂浆留样*/
+/*inspection砂浆出厂检验*/
+/*invoiceNum砂浆出厂情况（按发货单号）*/
+/*batchNum砂浆出厂情况（按砂浆批号）*/
+/*material砂浆原料进厂通知单*/
+/*mixSingle砂浆配合比通知单（单一型）*/
+/*mixTotal砂浆配合比通知单（汇总型）*/
+/*sendOut砂浆发货通知单*/

@@ -1,0 +1,52 @@
+/**
+ *    内容样式
+ *    Create by Jackie Xie
+ *    2017-01-01
+ */
+.main-content {
+    width: 100%;
+    /*margin: 50px auto;*/
+    position: absolute;
+    left: 0;
+    top: 50px;
+    margin-bottom: 0;
+    background-color: #e8edf1;
+    overflow: hidden;
+}
+
+.wrap {
+    min-height: 25rem;
+    overflow: auto;
+}
+
+.wrap .page-header {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 0 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #dbdcde;
+}
+
+.wrap .panel-container {
+    padding: 0 20px;
+}
+
+.wrap .breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.panel-container .panel-title {
+    display: inline-block;
+}
+
+.panel-container .panel-has-btn {
+    line-height: 33px; /* the same line-height as button's height*/
+}
+
+.panel .form-btn {
+    display: inline-block;
+    float: right;
+}
+

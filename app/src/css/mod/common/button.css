@@ -1,0 +1,62 @@
+/**
+ *    按钮样式
+ *    Create by Jackie Xie
+ *    2017-02-13
+ */
+
+/*操作按钮*/
+.button-operate,
+.pagination>li>.button-operate{
+    font-size: 12px;
+    font-weight: 400;
+    background: #26a9ea;
+    color: #fff;
+    border-color: #26a9ea;
+}
+.button-operate:focus,
+.button-operate:hover,
+.pagination>li>.button-operate:focus,
+.pagination>li>.button-operate:hover {
+    color: #fff;
+    background: #5db7f8;
+    border-color: #5db7f8;
+}
+/*超大号*/
+.button-mm-hg {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+    width: 49%;
+}
+.modal-footer .button-mm-hg + .button-mm-hg{
+    margin-left: 2%;
+}
+/*大号*/
+.button-mm-lg {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+}
+/*中号*/
+.button-mm-md {
+    font-size: 14px;
+    padding: 0 24px;
+    line-height: 34px;
+    height: 33px;
+}
+/*小号*/
+.button-mm-sm {
+    font-size: 12px;
+    padding: 0 18px;
+    line-height: 33px;
+    height: 33px;
+}
+/*超小号*/
+.button-mm-xs {
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 25px;
+    height: 25px;
+}

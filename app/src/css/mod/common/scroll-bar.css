@@ -1,0 +1,39 @@
+/**
+ *    滚动条样式
+ *    Create by Jackie Xie
+ *    2017-01-15
+ */
+.mCustomScrollbar {
+    padding-right: 0;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 10px;
+}
+
+/* 浅色 */
+.mCS-gray-light.mCSB_scrollTools {
+    top: 0;
+    right: 0;
+    width: 10px;
+}
+
+.mCS-gray-light.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 10px;
+    background-color: #ababab;
+    border-radius: 0;
+}
+
+.mCS-gray-light.mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+    border: none;
+    background-color: transparent;
+}
+
+.mCS-gray-light.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -99px 0;
+}
+
+.mCS-gray-light.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -99px -20px;
+}

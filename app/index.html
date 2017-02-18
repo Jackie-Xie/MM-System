@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预拌砂浆管理平台</title>
+    <base target="_self">
+    <meta name="description"
+          content="砂浆企业通过本平台，提高预拌砂浆质量控制和管理水平，有助于主管部门对预拌砂浆企业的质量监督，节约企业在质量记录台账表式上的投入，进一步发挥预拌砂浆优势，从而推动我省预拌砂浆健康发展。">
+    <meta name="keywords" content="预拌砂浆，水泥，砂浆，细骨料，粉煤灰，矿粉，保水增稠材料，性能检验，砂浆配合比，统计台账，报表，质量检验">
+    <meta name="author" content="Jackie Xie, Chen Huxing">
+
+    <!-- lib css files -->
+    <link rel="stylesheet" href="src/css/lib/bootstrap_3.3.6.min.css"/>
+    <link rel="stylesheet" href="src/js/plugin/datetimepicker/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="src/js/plugin/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="src/js/plugin/buttons/buttons-2.0.0.css"/>
+
+
+    <!-- app css files s -->
+    <!-- global -->
+    <link rel="stylesheet" href="src/css/global.css"/>
+    <!-- common -->
+    <link rel="stylesheet" href="src/css/mod/common/header.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/subNav.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/content.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/footer.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/pagination.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/modal.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/progress.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/table.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/form.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/button.css"/>
+    <link rel="stylesheet" href="src/css/mod/common/scroll-bar.css"/>
+    <!-- login -->
+    <link rel="stylesheet" href="src/css/mod/login/index.css"/>
+    <!-- home -->
+    <link rel="stylesheet" href="src/css/mod/home/index.css"/>
+    <!-- originalTest -->
+    <link rel="stylesheet" href="src/css/mod/originalTest/index.css"/>
+    <!-- reportForms -->
+    <link rel="stylesheet" href="src/css/mod/reportForms/index.css"/>
+    <!-- leaveFactory -->
+    <link rel="stylesheet" href="src/css/mod/leaveFactory/index.css"/>
+    <!-- workNotice -->
+    <link rel="stylesheet" href="src/css/mod/workNotice/index.css"/>
+    <!-- setting -->
+    <link rel="stylesheet" href="src/css/mod/setting/index.css"/>
+    <!-- app css files e -->
+
+    <link rel="shortcut icon" href="favicon.ico?20170101">
+</head>
+<body ng-app="mortarApp">
+<!--[if lt IE 9]>
+<div class="alert alert-info text-center" role="alert">
+    由于本系统不兼容IE部分版本，为能达到使用效果，请使用谷歌CHROME或火狐FIREFOX浏览器打开本页面。
+</div>
+<![endif]-->
+<div ng-view=""></div>
+
+<!-- lib js files -->
+<script src="src/js/lib/jquery_1.11.3.min.js"></script>
+<script src="src/js/lib/bootstrap_3.3.6.min.js"></script>
+<script src="src/js/plugin/treeview/treeview.min.js"></script>
+<script src="src/js/lib/angular/angular/angular.js"></script>
+<script src="src/js/lib/angular/angular-animate/angular-animate.js"></script>
+<script src="src/js/lib/angular/angular-cookies/angular-cookies.js"></script>
+<script src="src/js/lib/angular/angular-resource/angular-resource.js"></script>
+<script src="src/js/lib/angular/angular-route/angular-route.js"></script>
+<script src="src/js/lib/angular/angular-sanitize/angular-sanitize.js"></script>
+<script src="src/js/lib/angular/angular-touch/angular-touch.js"></script>
+<script src="src/js/plugin/underscore/underscore.1.8.3.min.js"></script>
+<script src="src/js/plugin/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="src/js/plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="src/js/plugin/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="src/js/plugin/buttons/buttons-2.0.0.js"></script>
+
+
+<!-- app js files s-->
+<script src="src/js/app.js"></script>
+<!-- public -->
+<script src="src/js/controllers/public/header.js"></script>
+<script src="src/js/services/ajaxInfo.js"></script>
+<!-- login -->
+<script src="src/js/controllers/login/index.js"></script>
+<!-- home -->
+<script src="src/js/controllers/home/index.js"></script>
+<!-- originalTest -->
+<script src="src/js/controllers/originalTest/cement/cement.js"></script>
+<script src="src/js/controllers/originalTest/cement/cement-input.js"></script>
+
+<script src="src/js/controllers/originalTest/fines/fines.js"></script>
+<script src="src/js/controllers/originalTest/fines/fines-input.js"></script>
+
+<script src="src/js/controllers/originalTest/flyash/flyash.js"></script>
+<script src="src/js/controllers/originalTest/flyash/flyash-input.js"></script>
+
+<script src="src/js/controllers/originalTest/mineral/mineral.js"></script>
+<script src="src/js/controllers/originalTest/mineral/mineral-input.js"></script>
+
+<script src="src/js/controllers/originalTest/mortar/mortar.js"></script>
+<script src="src/js/controllers/originalTest/mortar/mortar-input.js"></script>
+
+<script src="src/js/controllers/originalTest/thickener/thickener.js"></script>
+<script src="src/js/controllers/originalTest/thickener/thickener-input.js"></script>
+
+<!-- otherRecords -->
+<script src="src/js/controllers/otherRecords/mixture.js"></script>
+<script src="src/js/controllers/otherRecords/reserved.js"></script>
+<!-- reportForms -->
+<script src="src/js/controllers/reportForms/cement/cement.js"></script>
+<script src="src/js/controllers/reportForms/cement/cement-detail.js"></script>
+<script src="src/js/controllers/reportForms/cement/cement-create.js"></script>
+<script src="src/js/controllers/reportForms/fines/fines.js"></script>
+<script src="src/js/controllers/reportForms/fines/fines-detail.js"></script>
+<script src="src/js/controllers/reportForms/fines/fines-create.js"></script>
+<script src="src/js/controllers/reportForms/flyash/flyash.js"></script>
+<script src="src/js/controllers/reportForms/flyash/flyash-detail.js"></script>
+<script src="src/js/controllers/reportForms/flyash/flyash-create.js"></script>
+<script src="src/js/controllers/reportForms/mineral/mineral.js"></script>
+<script src="src/js/controllers/reportForms/mineral/mineral-detail.js"></script>
+<script src="src/js/controllers/reportForms/mineral/mineral-create.js"></script>
+<script src="src/js/controllers/reportForms/mortar/mortar.js"></script>
+<script src="src/js/controllers/reportForms/mortar/mortar-detail.js"></script>
+<script src="src/js/controllers/reportForms/mortar/mortar-create.js"></script>
+<script src="src/js/controllers/reportForms/thickener/thickener.js"></script>
+<script src="src/js/controllers/reportForms/thickener/thickener-detail.js"></script>
+<script src="src/js/controllers/reportForms/thickener/thickener-create.js"></script>
+<!-- leaveFactory -->
+<script src="src/js/controllers/leaveFactory/inspection.js"></script>
+<script src="src/js/controllers/leaveFactory/batchNum.js"></script>
+<script src="src/js/controllers/leaveFactory/invoiceNum.js"></script>
+<!-- workNotice -->
+<script src="src/js/controllers/workNotice/material.js"></script>
+<script src="src/js/controllers/workNotice/mixSingle.js"></script>
+<script src="src/js/controllers/workNotice/mixTotal.js"></script>
+<script src="src/js/controllers/workNotice/sendOut.js"></script>
+<!-- setting -->
+<script src="src/js/controllers/setting/user.js"></script>
+<script src="src/js/controllers/setting/authority.js"></script>
+<script src="src/js/controllers/setting/company.js"></script>
+</body>
+</html>

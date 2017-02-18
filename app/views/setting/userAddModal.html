@@ -1,0 +1,70 @@
+
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h6>{{modalTitle}}用户配置</h6>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-lg-12">
+			<form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_username">用户名称</label>
+                    <div class="input-custom input-custom-lg">
+                        <input class="form-control" type="text" id="J_username" placeholder="用户名称" ng-model="m_username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_roleselect">角色选择</label>
+                    <div class="input-custom input-custom-lg">
+                        <select class="form-control" id="J_roleselect" ng-model="m_roleselect">
+                            <option value="1">网省运维人员</option>
+                            <option value="2">网省管理员</option>
+                            <option value="3">数据中心运维人员</option>
+                            <option value="4">数据中心管理员</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_userstatus">用户状态</label>
+                    <div class="input-custom input-custom-lg">
+                        <select class="form-control" id="J_userstatus" ng-model="m_userstatus">
+                            <option value="1">有效</option>
+                            <option value="0">无效</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_telnum">联系方式</label>
+                    <div class="input-custom input-custom-lg">
+                        <input class="form-control" type="text" id="J_telnum" placeholder="联系方式" ng-model="m_telnum">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_emails">电子邮箱</label>
+                    <div class="input-custom input-custom-lg">
+                        <input class="form-control" type="text" id="J_emails" placeholder="电子邮箱" ng-model="m_emails">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label label-custom" for="J_pwd">用户密码</label>
+                    <div class="input-custom input-custom-lg">
+                        <input class="form-control" type="text" id="J_pwd" placeholder="用户密码" ng-model="m_pwd">
+                    </div>
+                </div>
+                <div class="form-group">
+                	<label for="J_roledesc" class="control-label label-custom">角色描述</label>
+                	<div class="input-custom input-custom-lg">
+                        <textarea class="form-control" name="roleDesc" id="J_roledesc" cols="30" rows="10" ng-model="m_roledesc"></textarea>
+                    </div>
+                </div>                    
+            </form>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<div class="alert alert-danger text-center" role="alert" ng-show="errorMsg!=''">
+		{{errorMsg}}
+	</div>
+	<!-- button class="btn btn-custom-md" data-text="取消" data-dismiss="modal" aria-hidden="true">取消</button> -->
+	<button class="btn btn-custom-md" data-text="完成" ng-click="addUser()">完成</button>
+</div>
