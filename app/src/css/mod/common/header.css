@@ -28,13 +28,20 @@
     font-size: 18px;
     color: #fff;
     font-weight: 500;
-    line-height: 52px;
+    line-height: 50px;
     margin-left: 10px;
     margin-right: 2.6rem;
 }
 
 .navbar-self .navbar-nav > li > a {
     color: #a2a2a2;
+}
+
+.navbar-self .navbar-nav > li > .lh19{
+    line-height: 19px;
+}
+.navbar-self .navbar-nav > li > .lh21{
+    line-height: 21px;
 }
 
 .navbar-self .navbar-nav > .open > a,

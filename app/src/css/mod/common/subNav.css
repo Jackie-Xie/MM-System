@@ -16,6 +16,7 @@
 }
 
 .sub-menu-item {
+    line-height: 1;
     text-align: left;
     border-top: 1px solid #505050;
     border-bottom: 1px solid #393939;
@@ -36,7 +37,7 @@
     display: inline-block;
     width: 100%;
     padding: 20px;
-    font-size: 16px;
+    font-size: 14px;
     color: #a2a2a2;
 }
 
@@ -60,10 +61,25 @@
 
 .icon {
     display: inline-block;
+    float: left;
     width: 36px;
     height: 36px;
     vertical-align: middle;
     margin-right: 15px;
+}
+
+.icon-title{
+    display: inline-block;
+    float: left;
+    width: 128px;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    font-style: normal;
+}
+
+.line-two{
+    line-height: 18px;
 }
 
 .icon-history {
@@ -110,16 +126,134 @@
     background: url(../../../images/icons/icon-input-active.png) no-repeat center center;
 }
 
-/* 图标颜色#a2a2a2,active#ffffff 36*36 32*32*/
-/*user用户管理*/
-/*authority权限管理*/
-/*company公司管理*/
-/*mixture砂浆配合比*/
-/*reserved砂浆留样*/
-/*inspection砂浆出厂检验*/
-/*invoiceNum砂浆出厂情况（按发货单号）*/
-/*batchNum砂浆出厂情况（按砂浆批号）*/
-/*material砂浆原料进厂通知单*/
-/*mixSingle砂浆配合比通知单（单一型）*/
-/*mixTotal砂浆配合比通知单（汇总型）*/
-/*sendOut砂浆发货通知单*/
+.icon-mixture {
+    background: url(../../../images/icons/icon-mixture.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-mixture,
+.sub-menu-item:hover .icon-mixture,
+.sub-menu-item:active .icon-mixture,
+.current-item .icon-mixture {
+    background: url(../../../images/icons/icon-mixture-active.png) no-repeat center center;
+}
+
+.icon-reserved {
+    background: url(../../../images/icons/icon-reserved.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-reserved,
+.sub-menu-item:hover .icon-reserved,
+.sub-menu-item:active .icon-reserved,
+.current-item .icon-reserved {
+    background: url(../../../images/icons/icon-reserved-active.png) no-repeat center center;
+}
+
+.icon-mixSingle {
+    background: url(../../../images/icons/icon-mixSingle.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-mixSingle,
+.sub-menu-item:hover .icon-mixSingle,
+.sub-menu-item:active .icon-mixSingle,
+.current-item .icon-mixSingle {
+    background: url(../../../images/icons/icon-mixSingle-active.png) no-repeat center center;
+}
+
+.icon-mixTotal {
+    background: url(../../../images/icons/icon-mixTotal.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-mixTotal,
+.sub-menu-item:hover .icon-mixTotal,
+.sub-menu-item:active .icon-mixTotal,
+.current-item .icon-mixTotal {
+    background: url(../../../images/icons/icon-mixTotal-active.png) no-repeat center center;
+}
+
+.icon-sendOut {
+    background: url(../../../images/icons/icon-sendOut.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-sendOut,
+.sub-menu-item:hover .icon-sendOut,
+.sub-menu-item:active .icon-sendOut,
+.current-item .icon-sendOut {
+    background: url(../../../images/icons/icon-sendOut-active.png) no-repeat center center;
+}
+
+.icon-material {
+    background: url(../../../images/icons/icon-material.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-material,
+.sub-menu-item:hover .icon-material,
+.sub-menu-item:active .icon-material,
+.current-item .icon-material {
+    background: url(../../../images/icons/icon-material-active.png) no-repeat center center;
+}
+
+.icon-inspection {
+    background: url(../../../images/icons/icon-inspection.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-inspection,
+.sub-menu-item:hover .icon-inspection,
+.sub-menu-item:active .icon-inspection,
+.current-item .icon-inspection {
+    background: url(../../../images/icons/icon-inspection-active.png) no-repeat center center;
+}
+
+.icon-invoiceNum {
+    background: url(../../../images/icons/icon-invoiceNum.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-invoiceNum,
+.sub-menu-item:hover .icon-invoiceNum,
+.sub-menu-item:active .icon-invoiceNum,
+.current-item .icon-invoiceNum {
+    background: url(../../../images/icons/icon-invoiceNum-active.png) no-repeat center center;
+}
+
+.icon-batchNum {
+    background: url(../../../images/icons/icon-batchNum.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-batchNum,
+.sub-menu-item:hover .icon-batchNum,
+.sub-menu-item:active .icon-batchNum,
+.current-item .icon-batchNum {
+    background: url(../../../images/icons/icon-batchNum-active.png) no-repeat center center;
+}
+
+.icon-user {
+    background: url(../../../images/icons/icon-user.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-user,
+.sub-menu-item:hover .icon-user,
+.sub-menu-item:active .icon-user,
+.current-item .icon-user {
+    background: url(../../../images/icons/icon-user-active.png) no-repeat center center;
+}
+
+.icon-authority {
+    background: url(../../../images/icons/icon-authority.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-authority,
+.sub-menu-item:hover .icon-authority,
+.sub-menu-item:active .icon-authority,
+.current-item .icon-authority {
+    background: url(../../../images/icons/icon-authority-active.png) no-repeat center center;
+}
+
+.icon-company {
+    background: url(../../../images/icons/icon-company.png) no-repeat center center;
+}
+
+.sub-menu-item:focus .icon-company,
+.sub-menu-item:hover .icon-company,
+.sub-menu-item:active .icon-company,
+.current-item .icon-company {
+    background: url(../../../images/icons/icon-company-active.png) no-repeat center center;
+}
