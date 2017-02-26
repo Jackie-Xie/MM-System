@@ -26,7 +26,7 @@
     font-size: 16px;
     line-height: 38px;
     height: 40px;
-    padding: 0 40px;
+    padding: 0 36px;
     width: 49%;
 }
 .modal-footer .button-mm-hg + .button-mm-hg{
@@ -44,26 +44,26 @@
     font-size: 16px;
     line-height: 38px;
     height: 40px;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 /*中号*/
 .button-mm-md {
     font-size: 14px;
-    padding: 0 24px;
+    padding: 0 18px;
     line-height: 33px;
     height: 33px;
 }
 /*小号*/
 .button-mm-sm {
     font-size: 12px;
-    padding: 0 18px;
+    padding: 0 14px;
     line-height: 33px;
     height: 33px;
 }
 /*超小号*/
 .button-mm-xs {
     font-size: 12px;
-    padding: 0 15px;
+    padding: 0 10px;
     line-height: 22px;
     height: 24px;
 }
